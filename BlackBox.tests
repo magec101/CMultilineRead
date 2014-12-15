@@ -1,0 +1,16 @@
+[
+    {
+        "simple test": {
+            "input": "First\nmy full name",
+            "output": "Hello First my full name",
+            "type": "STDIN"
+        }
+    },
+    {
+        "White space test": {
+            "input": "Mr. \nVinay Konanur",
+            "output": "Hello Mr. Vinay Konanur",
+            "type": "STDIN"
+        }
+    }
+]

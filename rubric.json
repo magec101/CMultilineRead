@@ -1,0 +1,51 @@
+{
+    "criteria": {
+        "blackboxtests": [
+            {
+                "checkName": "simple test",
+                "checkType": "BlackBoxTest",
+                "group": "blackboxtests",
+                "penalty": "",
+                "rule": {
+                    "input": "First\nmy full name",
+                    "output": "Hello First my full name",
+                    "type": "STDIN"
+                },
+                "score": "15",
+                "visible": "all"
+            },
+            {
+                "checkName": "White space test",
+                "checkType": "BlackBoxTest",
+                "group": "blackboxtests",
+                "penalty": "",
+                "rule": {
+                    "input": "Mr. \nVinay Konanur",
+                    "output": "Hello Mr. Vinay Konanur",
+                    "type": "STDIN"
+                },
+                "score": "60",
+                "visible": "all"
+            }
+        ],
+        "system": [
+            {
+                "checkName": "Compilation",
+                "checkType": "compile",
+                "group": "system",
+                "penalty": "",
+                "rule": {
+                    "deprecation_ignore": "",
+                    "warnings_ignore": ""
+                },
+                "score": "10",
+                "visible": "eval"
+            }
+        ]
+    },
+    "weightage": {
+        "blackboxtests": ".75",
+        "system": ".25"
+    },
+    "lastSaved": "20141215 164047"
+}

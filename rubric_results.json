@@ -1,0 +1,89 @@
+{
+    "criteria": {
+        "blackboxtests": [
+            {
+                "checkName": "simple test",
+                "checkType": "BlackBoxTest",
+                "group": "blackboxtests",
+                "penalty": "",
+                "rule": {
+                    "input": "First\nmy full name",
+                    "output": "Hello First my full name",
+                    "type": "STDIN"
+                },
+                "score": "15",
+                "visible": "all",
+                "result": {
+                    "PASS": true,
+                    "violations": [
+                        ""
+                    ]
+                }
+            },
+            {
+                "checkName": "White space test",
+                "checkType": "BlackBoxTest",
+                "group": "blackboxtests",
+                "penalty": "",
+                "rule": {
+                    "input": "Mr. \nVinay Konanur",
+                    "output": "Hello Mr. Vinay Konanur",
+                    "type": "STDIN"
+                },
+                "score": "60",
+                "visible": "all",
+                "result": {
+                    "PASS": true,
+                    "violations": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "system": [
+            {
+                "checkName": "Compilation",
+                "checkType": "compile",
+                "group": "system",
+                "penalty": "",
+                "rule": {
+                    "deprecation_ignore": "",
+                    "warnings_ignore": ""
+                },
+                "score": "10",
+                "visible": "eval",
+                "result": {
+                    "PASS": true,
+                    "violations": [
+
+                    ]
+                }
+            }
+        ]
+    },
+    "weightage": {
+        "blackboxtests": ".75",
+        "system": ".25"
+    },
+    "lastSaved": "20141215 164047",
+    "resultSummary": {
+        "blackboxtests": {
+            "totalchecks": 2,
+            "pass": 2,
+            "fail": 0,
+            "error": 0,
+            "skipped": 0,
+            "groupScore": 75
+        },
+        "system": {
+            "totalchecks": 1,
+            "pass": 1,
+            "fail": 0,
+            "error": 0,
+            "skipped": 0,
+            "groupScore": 10
+        },
+        "overallScore": 0
+    },
+    "resultLastSaved": "20141215 164051"
+}
